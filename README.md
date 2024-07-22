@@ -67,10 +67,19 @@ To run ConvoHub locally, follow these steps:
     NEXT_PUBLIC_LIVEKIT_URL=
     ```
 
-4. Run the development server:
+4. Generate the Prisma client:
     ```bash
-    # Start backend server
+    npx prisma generate
+    ```
+
+5. Push the database schema:
+    ```bash
+    npx prisma db push
+    ```
+
+6. Run the development server:
+    ```bash
     npm run dev
     ```
 
-5. Open your browser and navigate to `http://localhost:3000`.
+7. Open your browser and navigate to `http://localhost:3000`.
