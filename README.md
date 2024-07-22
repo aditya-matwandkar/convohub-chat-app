@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ConvoHub
 
-## Getting Started
+Welcome to ConvoHub, a modern communication platform designed to enhance community building. Leveraging the latest web technologies, ConvoHub offers a robust solution for seamless chat, voice, and video communication.
 
-First, run the development server:
+![ConvoHub Logo](src/app/icon.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-time Messaging**: Instant messaging with friends and community members.
+- **Voice Channels**: High-quality voice channels for group conversations.
+- **Video Calls**: One-on-one and group video calling capabilities.
+- **Roles and Permissions**: Manage server roles and permissions with ease.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend**: NextJs, React, Zustand, Shadcn UI, TypeScript
+- **Backend**: NextJs API routes, TypeScript
+- **Database**: PostgreSQL with Prisma
+- **Real-time Communication**: Socket.io
+- **Authentication**: Clerk
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+Here are some screenshots of ConvoHub in action:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![SS1](public/screenshots/ConvoHub-ss1.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![SS2](public/screenshots/ConvoHub-ss2.png)
 
-## Deploy on Vercel
+![SS3](public/screenshots/ConvoHub-ss3.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![SS4](public/screenshots/ConvoHub-ss4.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![SS5](public/screenshots/ConvoHub-ss5.png)
+
+## Installation
+
+To run ConvoHub locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/aditya-matwandkar/convohub-chat-app.git
+    cd convohub
+    ```
+
+2. Install dependencies:
+    ```bash
+    # NPM
+    npm install
+    # Or, use any package manager of your choice.
+    ```
+
+3. Create a `.env` file with the following variables:
+    ```env
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+
+    DATABASE_URL=
+
+    UPLOADTHING_SECRET=
+    UPLOADTHING_APP_ID=
+
+    LIVEKIT_API_KEY=
+    LIVEKIT_API_SECRET=
+    NEXT_PUBLIC_LIVEKIT_URL=
+    ```
+
+4. Run the development server:
+    ```bash
+    # Start backend server
+    npm run dev
+    ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
